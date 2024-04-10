@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Main Program
-        $('#signup-switch-button').on('click', signupSwitch);
+        loginSwitch();
         let usernames = [];
         let passwords = [];
 
