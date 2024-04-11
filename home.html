@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zigma Food</title>
+    <title>Sigma Food</title>
     <link rel="stylesheet" href="home.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="home.js"></script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,77 +25,98 @@
     <link rel="stylesheet" href="home.css">
     <script src="home.js"></script>
 </head>
+
 <body>
 
     <!-- Header  -->
     <header>
-        <nav>
 
-            <!-- Nav First Container -->
-            <div class="nav-first-box">
+        <!-- Nav First Container -->
+        <div class="nav-first-box">
 
-                <a class="img-logo-box" href="#">
-                    <img class="img-logo" src="logo.png">
-                </a>
+            <a class="img-logo-box" href="#">
+                <img id="img-logo" src="logo.png">
+            </a>
 
-                <div class="search-box">
-                    <input class="search-input" type="text" placeholder="Search restaurant">
-                    <button class="search-button">Search</button>
-                </div>
-
-                <button class="choose-location-button">Choose location</button>
-
+            <div class="search-box">
+                <input id="search-input" type="text" placeholder="Search restaurant">
+                <button id="search-button">Search</button>
             </div>
 
-            <!-- Nav Second Container -->
-            <div class="nav-second-box">
+            <button id="choose-location-button">Choose location</button>
 
-                <button class="cart-button">Cart</button>
-                <span class="cart-counter"></span>
-                <button class="account-button">Login</button>
+        </div>
 
-            </div>
+        <!-- Nav Second Container -->
+        <div class="nav-second-box">
 
-        </nav>
+            <button id="cart-button">Cart</button>
+            <span id="cart-counter">4</span>
+            <button id="account-button">Login</button>
+
+        </div>
+
     </header>
 
     <main>
 
-        <h1 class="heading-restauratns">Restaurants</h1>
+        <!-- Main Heading -->
+        <h1 class="heading-restaurants">Restaurants</h1>
 
+        <!-- Main Box -->
         <div class="restaurants-box">
 
-            <div class="restaurant-card" id="restaurant-1">
+            <div class="card restaurant-card" id="restaurant-1">
 
-                <div class="restaurant-img-box">
-                    <img class="restaurant-img" src="no image.jpg">
+                <img class="card-img-top restaurant-img" src="no image.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Restaurant 1</h3>
+                    <p class="card-text">5.0</p>
                 </div>
-
-                <h3>Restaurant 1</h3>
-
-                <p>5.0</p>
-
             </div>
 
-            <div class="restaurant-card" id="restaurant-2">
+            <div class="card restaurant-card" id="restaurant-2">
+                <img class="card-img-top restaurant-img" src="no image.jpg">
 
-                <div class="restaurant-img-box">
-                    <img class="restaurant-img" src="no image.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Restaurant 2</h3>
+                    <p class="card-text">5.0</p>
                 </div>
+            </div>
 
-                <h3>Restaurant 2</h3>
+            <div class="card restaurant-card" id="restaurant-3">
+                <img class="card-img-top restaurant-img" src="no image.jpg">
 
-                <p>5.0</p>
+                <div class="card-body">
+                    <h3 class="card-title">Restaurant 3</h3>
+                    <p class="card-text">5.0</p>
+                </div>
+            </div>
 
+            <div class="card restaurant-card" id="restaurant-4">
+                <img class="card-img-top restaurant-img" src="no image.jpg">
+
+                <div class="card-body">
+                    <h3 class="card-title">Restaurant 4</h3>
+                    <p class="card-text">5.0</p>
+                </div>
             </div>
 
         </div>
 
     </main>
 
-    <footer>
+    <footer class="footer mt-5">
+        <div class="container text-center">
             <span class="text-muted">&copy; 2024 Sigma Food. All rights reserved.</span>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
