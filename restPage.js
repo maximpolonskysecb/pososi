@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
 
             let name = document.getElementById("restaurant-name");
-            name.textContent ="Perfect Steacks";
+            name.textContent ="Perfect Steaks";
 
             
 
