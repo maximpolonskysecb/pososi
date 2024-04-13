@@ -38,3 +38,22 @@ body{
 
 
 }
+.mapButton{
+    height: 46px; 
+    padding-left: 24px; 
+    padding-right: 24px; 
+    padding-top: 14px; 
+    padding-bottom: 14px; 
+    background: gold; 
+    border-radius: 8px; 
+    position: relative; 
+    left: 1cm; 
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 600; 
+    border: none; 
+    cursor: pointer;
+}
+.closeButton{
+    background: white; 
+    border-radius: 8px;
+}
