@@ -126,7 +126,7 @@ header {
       color: #1b1b1b;
       background-color: crimson;
       border-radius: 50%;
-      font-size: clamp(6px, 1.5vw, 15px);
+      font-size: clamp(6px, 1.5vw, 30px);
       width: 1em;
       height: 1em;
       padding-left: 0.2em;
