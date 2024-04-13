@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.big_map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.modelContent{
+    display: none;
+}
+
+#map{
+    display: block;
+    height: 50vh;
+    width: 90vh;
+   
+    
+
+}
+
+.leaflet-control .leaflet-control-attribution {
+    width: 200px;
+    height: 20vh; 
+    font-size: 12px; 
+    display: none; 
+   
+}
+
+.map_close{
+    height: 53.5vh;
+
+
+}
