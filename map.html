@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zigma Foods Map</title>
+    <link rel="stylesheet" type="text/css" href="map.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div class="model">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <button type="button" id="mapButton" class="mapButton" onclick="ShowLoc()"
+                    style="height: 46px; padding-left: 24px; padding-right: 24px; padding-top: 14px; padding-bottom: 14px; background: white; border-radius: 8px; position: relative; left: 1cm; font-family: 'Quicksand', Arial, sans-serif;">Locations
+                    near me</button>
+            </div>
+
+        </nav>
+        <div class="modelContent">
+
+            <div class="big_map">
+                <div id="map" class="map">
+
+
+                </div>
+                <div class="map_close">
+                    <div class="map _close_inside">
+                        <button type="button" class="map_close_button" onclick="HideLoc()" style="background: white; border-radius: 8px;">✕</button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+</body>
+
+</html>
