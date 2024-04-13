@@ -8,7 +8,7 @@
 
 button, input {
     font-weight: bold;
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(8px, 2vw, 40px);
     padding: 0.5vw;
 
     &:focus {
@@ -143,7 +143,7 @@ header {
         color: #1b1b1b;
         background-color: crimson;
         border-radius: 50%;
-        font-size: clamp(6px, 1.5vw, 15px);
+        font-size: clamp(6px, 1.5vw, 30px);
         width: 1em;
         height: 1em;
         padding-left: 0.2em;
@@ -156,29 +156,32 @@ header {
 .heading-restaurants {
     padding-left: 3vw;
     padding-bottom: 3vw;
-    font-size: clamp(20px, 5vw, 50px);
+    font-size: clamp(20px, 5vw, 100px);
     font-weight: bold;
 }
 
 .restaurants-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    justify-content: flex-start;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    gap: 1vw;
 }
 
 .restaurant-card {
-    width: 30vw;
+    width: 150px;
     margin-bottom: 2vw;
     cursor: pointer;
 
     .card-title {
         color: #1b1b1b;
+        font-size: clamp(15px, 2vw, 40px);
     }
 
     .card-text {
         color: rgb(216, 184, 0);
+        font-size: clamp(10px, 1.5vw, 30px);
     }
 }
 
@@ -187,4 +190,5 @@ footer {
     background-color: #0e0e0e;
     height: 3vw;
     align-items: center;
+    font-size: clamp(10px, 2vw, 40px);
 }

@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (usernameArea.val() !== '' && passwordArea.val() !== '') {
                 if (usernames.includes(usernameArea.val().toLowerCase())) {
                     if (passwordArea.val() === passwords[$.inArray(usernameArea.val().toLowerCase(), usernames)]) {
+                        localStorage.setItem('username', JSON.stringify(usernameArea.val()));
                         window.location.href = 'home.html';
                     } else {
                         $('#error-message').text('Icorrect password');
