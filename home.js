@@ -18,6 +18,7 @@ $(document).ready(function () {
             $('.restaurants-box').append(newCard);
 
         });
+    
         sampleCard.remove();
     }
 
@@ -30,19 +31,20 @@ $(document).ready(function () {
     }
 
     function handleClick(event) {
-        // Получаем данные из атрибутов data-* 
+        // Получаем данные из атрибутов data-* с помощью jQuery
         const restoranteData = {
-            id: event.target.dataset.id,
-            name: event.target.dataset.name
+            id: $(event.target).closest('.restaurant-card').attr('data-id'),
+            name: $(event.target).closest('.restaurant-card').attr('data-name')
         };
-
+        console.log($(event.target).closest('.restaurant-card').attr('data-id'));
+    
         // Сохраняем данные в localStorage 
         localStorage.setItem('restoranteData', JSON.stringify(restoranteData));
-
+    
         // Перенаправляем браузер на указанную страницу 
-        document.location = "RestPage.html";
+        window.location.href = "RestPage.html";
     }
-
+    
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Main Code ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -50,7 +52,7 @@ $(document).ready(function () {
     $('#account-button').on('click', function() {
         window.location.href = "loginPage.html";
     });
-    
+        
     let restArray = [
         ['Restaurant 1', '5.0', 'no-image.jpg', '1', 'R1'],
         ['Restaurant 2', '5.0', 'no-image.jpg', '2', 'R2'],
