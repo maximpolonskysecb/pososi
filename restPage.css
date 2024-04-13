@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body{
+  background-color: #1b1b1b;
+  font-family: 'Quicksand', Arial, sans-serif;
+    
+   
+}
+
+img{
+    width: 18vh;
+    height: 25vh;
+    
+}
+
+header {
+  background-color: #1b1b1b;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1vw;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3vw;
+}
+
+.nav-first-box {
+  display: flex;
+  gap: 1vw;
+
+  .img-logo-box {
+      width: 4vw;
+      height: 4vw;
+
+      img {
+          width: 100%;
+          height: 100%;
+      }
+  }
+
+  .search-box {
+      display: flex;
+      
+      #search-input {
+          color: white;
+          background-color: #1b1b1b;
+          padding: 0.5vw;
+          border: none;
+          border-top-left-radius: 0.8vw;        
+          border-bottom-left-radius: 0.8vw;
+          border: 0.2vw solid gold;
+      }
+
+      #search-button {
+          color: #1b1b1b;
+          background-color: gold;
+          border: none;
+          border-top-right-radius: 0.8vw;        
+          border-bottom-right-radius: 0.8vw;
+          border: 0.2vw solid gold;
+
+          &:hover {
+              background-color: rgb(216, 184, 0);
+              border: 0.2vw solid rgb(216, 184, 0);
+          }
+
+          &:active {
+              background-color: rgb(184, 156, 0);
+              border: 0.2vw solid rgb(184, 156, 0);
+          }
+      
+      }
+  }
+
+  #choose-location-button {
+      color: #1b1b1b;
+      background-color: white;
+      border: none;
+      border-radius: 0.8vw;
+
+      &:hover {
+          background-color: #cccccc;
+      }
+
+      &:active {
+          background-color: #b3b3b3;
+      }
+  }
+
+}
+
+.nav-second-box {
+  display: flex;
+  gap: 1vw;
+
+  #cart-button, #account-button {
+      color: #1b1b1b;
+      background-color: white;
+      border: none;
+      border-radius: 0.8vw;
+
+      &:hover {
+          background-color: #cccccc;
+      }
+
+      &:active {
+          background-color: #b3b3b3;
+      }
+
+  }
+
+  #account-button {
+      background-color: gold;
+
+      &:hover {
+          background-color: rgb(216, 184, 0);
+      }
+
+      &:active {
+          background-color: rgb(184, 156, 0);
+      }
+
+  }
+
+  #cart-counter {
+      color: #1b1b1b;
+      background-color: crimson;
+      border-radius: 50%;
+      font-size: clamp(6px, 1.5vw, 15px);
+      width: 1em;
+      height: 1em;
+      padding-left: 0.2em;
+      padding-bottom: 1.2em;
+      margin-left: -0.5vw;
+  }
+
+}
+
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  width:100%;
+
+}
+
+
+
+
+
+
+.restaurant-container {
+    display: flex;
+    flex-direction: row;
+    
+    background-color: rgb(245, 215, 66);/* sample yellow background */
+    border-radius: 4vh;
+    width: 110vh;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .intro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .restaurant-name{
+    color: #1b1b1b;
+    font-size: 10vh;
+  }
+    
+
+  
+.menu-text{
+  color: whitesmoke;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vh;
+    
+    
+  }
+
+  .second_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+  }
+  .card {
+    width: 18vh;
+    background: #fff;
+    border-radius: 1.3vh;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    
+    text-align: center;
+  }
+  
+  .card-header {
+    background: grey;
+    color: #fff;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  .card-price {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    color: #333;
+  }
+  .card-info {
+    padding: 5px;
+    border-top: 1px solid #eee;
+    color: #666;
+  }
+  .card button {
+    background: grey;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .card button:hover {
+    background: #ffc107;
+  }
