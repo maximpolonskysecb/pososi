@@ -58,7 +58,7 @@
 
     section span {
       position: relative;
-      display: block;
+     
       width: calc(6.25vw - 2px);
       height: calc(6.25vw - 2px);
       background: #181818;
@@ -192,6 +192,36 @@
         height: calc(20vw - 2px);
       }
     }
+
+    span{
+      display: flex;
+      align-items: center;
+      justify-content: space-around; 
+      
+    }
+
+    span img {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+span img.animating {
+  opacity: 1;
+  animation: picture 5s linear infinite;
+}
+
+@keyframes picture {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+    
+      
+    
   </style>
 </head>
 

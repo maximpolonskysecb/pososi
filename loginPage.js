@@ -88,4 +88,42 @@ document.addEventListener('DOMContentLoaded', () => {
         let passwords = [];
 
     });
+
+    
+    const images = [
+            'fast-food-burger-svgrepo-com.svg',
+            'fast-food-bread-2-svgrepo-com.svg',
+            'fast-food-noodle-svgrepo-com.svg',
+            'fast-food-donut-svgrepo-com.svg',
+            // Добавьте пути к другим изображениям
+    ];
+
+    document.querySelectorAll('span').forEach(span => {
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+            const imgElement = document.createElement('img');
+            imgElement.src = randomImage;
+            imgElement.style.width = "9vh" 
+            span.appendChild(imgElement);
+    });
+    document.querySelectorAll('span').forEach(span => {
+        span.addEventListener('mouseover', () => {
+          const img = span.querySelector('img');
+          if (img && !img.classList.contains('animating')) {
+            img.classList.add('animating');
+            img.style.opacity = 1; // Сделать видимым
+          }
+        });
+      
+        span.addEventListener('mouseleave', () => {
+          const img = span.querySelector('img');
+          if (img) {
+            setTimeout(() =>{ img.classList.remove('animating'),
+           
+            img.style.opacity = 0; // Сделать невидимым
+            },1300)
+          }
+        });
+      });
+      
+      
 });
