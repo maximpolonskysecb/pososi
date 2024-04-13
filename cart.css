@@ -1,0 +1,18 @@
+nav img{
+    width: 20vb;
+    border-radius: 5%;
+    padding-left: 10px;
+}
+ul li{
+    justify-content: space-between;
+    margin-left: 50px;
+}
+body{
+    background-color: rgb(24, 24, 23);
+}
+.text-white img{
+    border-radius: 50%;
+    width: 20vb;
+}
+.text-white{
+    padding-top: 30px;
