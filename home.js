@@ -56,14 +56,14 @@ $(document).ready(function () {
     });
         
     let restArray = [
-        ['restorante', '5.0', 'no-image.jpg', '1', 'R1'],
-        ['restorante', '5.0', 'no-image.jpg', '2', 'R2'],
-        ['restorante', '5.0', 'no-image.jpg', '3', 'R3'],
-        ['restorante', '5.0', 'no-image.jpg', '4', 'R4'],
-        ['restorante', '5.0', 'no-image.jpg', '5', 'R5'],
-        ['restorante', '5.0', 'no-image.jpg', '6', 'R6'],
-        ['restorante', '5.0', 'no-image.jpg', '7', 'R7'],
-        ['restorante', '5.0', 'no-image.jpg', '8', 'R8'],
+        ['Perfect Pizza', '5.0', 'no-image.jpg', '1', 'R1'],
+        ['Perfect Burger', '5.0', 'no-image.jpg', '2', 'R2'],
+        ['Perfect Salad', '5.0', 'no-image.jpg', '3', 'R3'],
+        ['Perfect Drink', '5.0', 'no-image.jpg', '4', 'R4'],
+        ['Perfect Desserts', '5.0', 'no-image.jpg', '5', 'R5'],
+        ['Prefect Sushi', '5.0', 'no-image.jpg', '6', 'R6'],
+        ['Perfect Steaks', '5.0', 'no-image.jpg', '7', 'R7'],
+        ['Perfect pasta', '5.0', 'no-image.jpg', '8', 'R8'],
     ]
 
     dropCards();

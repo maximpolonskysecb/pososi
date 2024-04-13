@@ -364,7 +364,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         
-
+        $('#account-button').on('click', function() {
+            window.location.href = "loginPage.html";
+        });
+    
     
     
 });

@@ -1,9 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-body{
-  background-color: #1b1b1b;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button, input {
+    font-weight: bold;
+    font-size: clamp(8px, 2vw, 40px);
+    padding: 0.5vw;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
   font-family: 'Quicksand', Arial, sans-serif;
-    
-   
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
 }
 
 img{
@@ -258,3 +281,11 @@ header {
   .card button:hover {
     background: #ffc107;
   }
+
+  footer {
+    display: flex;
+    background-color: #0e0e0e;
+    height: 3vw;
+    align-items: center;
+    font-size: clamp(10px, 2vw, 40px);
+}
