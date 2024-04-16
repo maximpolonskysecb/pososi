@@ -37,3 +37,7 @@ let model = document.querySelector(".modelContent");
         function HideLoc() {
             model.style.display = "none";
         }
+
+        function GoBack() {
+            window.location.href = "home.html";
+        }
