@@ -54,6 +54,10 @@ $(document).ready(function () {
     $('#account-button').on('click', function() {
         window.location.href = "loginPage.html";
     });
+
+    $('#choose-location-button').on('click', function() {
+        window.location.href = "map.html";
+    });
         
     let restArray = [
         ['Perfect Pizza', '5.0', 'no-image.jpg', '1', 'R1'],
