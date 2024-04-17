@@ -197,5 +197,14 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="restPage.js"></script>
+        <!-- Custom JavaScript for adding items to cart -->
+        <script src="addToCart.js"></script>
+        <script>
+            // JavaScript code to handle navigation to the cart page when the "Cart" button is clicked
+            document.getElementById("cart-button").addEventListener("click", function() {
+                // Navigate to the cart page
+                window.location.href = "cart.html";
+            });
+        </script>
 </body>
 </html>

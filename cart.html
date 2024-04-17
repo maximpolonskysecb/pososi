@@ -105,7 +105,7 @@ min-height: 300px;
   
                     <div class="row mb-4 d-flex justify-content-between align-items-center">
                       <!-- Item 1 -->
-                      <!-- Add your item cards here -->
+                      <div id="cart-items"></div>
                     </div>
   
                     <hr class="my-4">
@@ -135,6 +135,37 @@ min-height: 300px;
       </div>
     </div>
   </section>
+  <script>
+    // JavaScript code to handle adding items to the cart
+    document.addEventListener("DOMContentLoaded", function() {
+        // Select the "Add" buttons
+        const addButtons = document.querySelectorAll(".card button");
+
+        // Add event listener to each "Add" button
+        addButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                // Get the item details
+                const item = button.parentElement;
+                const itemName = item.querySelector(".card-title").innerText;
+                const itemPrice = item.querySelector(".card-price").innerText;
+
+                // Create a new item element
+                const newItem = document.createElement("div");
+                newItem.classList.add("cart-item");
+                newItem.innerHTML = `
+                    <div>${itemName}</div>
+                    <div>${itemPrice}</div>
+                `;
+
+                // Append the new item to the cart
+                const cart = document.getElementById("cart-items");
+                cart.appendChild(newItem);
+            });
+        });
+    });
+</script>
+
+  <script src="addtocar.js"></script>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
