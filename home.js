@@ -58,6 +58,12 @@ $(document).ready(function () {
     $('#choose-location-button').on('click', function() {
         window.location.href = "map.html";
     });
+
+    $('#cart-button').on('click', function() {
+        window.location.href = "Carts.html";
+    });
+
+
         
     let restArray = [
         ['Perfect Pizza', '5.0', 'no-image.jpg', '1', 'R1'],
